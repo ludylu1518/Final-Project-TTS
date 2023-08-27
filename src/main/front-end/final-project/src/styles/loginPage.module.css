@@ -1,0 +1,41 @@
+.page {
+   text-align: center;
+   margin: auto;
+   margin-top: 8%;
+   width: fit-content;
+   height: fit-content;
+   border: 2px black solid;
+   border-radius: 2em;
+   padding: 25px;
+   background-color: rgb(209, 241, 209);
+}
+
+.tabs {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 10px;
+}
+
+.tabs > button {
+    all: unset;
+    cursor: pointer;
+    font-size: 50px;
+    padding: 5px 15px 0px 15px;
+}
+
+.tabs .activeTab {
+    border-bottom: 1px black solid;
+}
+
+.tabs > button:hover {
+    border: 1px black solid;
+}
+
+.links {
+    margin-top: 20px;
+}
+
+.links a {
+    margin-right: 40px;
+}
+

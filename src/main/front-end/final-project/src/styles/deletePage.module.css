@@ -1,0 +1,23 @@
+.content {
+    text-align: center;
+    margin-top: 10%;
+}
+
+.title {
+    font-size: 50px;
+    color: rgb(199, 48, 48);
+}
+
+.links {
+    margin-top: 5%;
+}
+
+.links a {
+    font-size: 25px;
+    padding: 10px 50px;
+    color: gray;
+}
+
+.links a:hover {
+    color: black;
+}

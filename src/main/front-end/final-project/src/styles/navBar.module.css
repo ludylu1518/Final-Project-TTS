@@ -1,0 +1,70 @@
+.sideBar {
+    height: 100%;
+    width: fit-content;
+    position: absolute;
+    left: 0;
+    top: 0;
+    padding-top: 40px;
+    background-color: lightblue;
+}
+
+.icon {
+    width: 50px;
+    display: none;
+}
+
+ul > li {
+    list-style: none;
+    font-size: 25px;
+    padding: 10px 10px;
+    margin-bottom: 10px;
+}
+
+ul > li:hover {
+   background-color: lightgray;
+}
+
+.logout {
+   position: fixed;
+   bottom: 10%;
+   left: 3rem;
+}
+
+.logout > a {
+    text-decoration: none;
+    font-size: 25px;
+    color: red;
+}
+
+.logout > a:hover {
+    color: darkred;
+}
+
+@media only screen and (max-width : 768px) {
+    
+    .sideBar ul{
+        display: none;
+    }
+
+    .icon {
+        display: inline-block;
+        cursor: pointer;
+    }
+
+    .logout {
+        position: relative;
+        left: 0;
+    }
+
+    .sideBar ul, .sideBar:active ul { 
+		display: none;
+		position: absolute;
+		background: lightblue;	
+		width: fit-content;
+        padding: 0;
+	}
+
+    .sideBar:hover ul {
+        display: block;
+    }
+}

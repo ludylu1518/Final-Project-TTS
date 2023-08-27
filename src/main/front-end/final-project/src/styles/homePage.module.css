@@ -1,0 +1,53 @@
+.home {
+    text-align: center;
+    margin: auto;
+    margin-top: 10%;
+}
+
+.header1 {
+    margin-bottom: 70px;
+    font-size: 60px;
+}
+
+.navBar {
+    margin-bottom: 10px;
+}
+
+.navBar > button {
+    all: unset;
+    cursor: pointer;
+    font-size: 30px;
+    padding: 5px 15px 0px 15px;
+}
+
+.navBar .active {
+    border-bottom: 1px black solid;
+}
+
+.content {
+    display: none;
+}
+
+.displayContent {
+    margin: auto;
+    width: 350px;
+    font-size: 25px;
+}
+
+.header5 {
+    margin-top: 50px;
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.loginButton {
+    text-decoration: none;
+    font-size: 50px;
+    color: rgb(127, 126, 126);
+    border-bottom: 1px rgb(127, 126, 126) solid;
+}
+
+.loginButton:hover {
+    color:black;
+    border-bottom: 1px black solid;
+}
