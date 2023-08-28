@@ -9,7 +9,15 @@ function homePage() {
     return (
         <>
            <div className={styles.home}> 
-                <h1 className={styles.header1}>Welcome to My Final Project for TTS!</h1>
+                <h1 className={styles.header1}>
+                    <span className={styles.titleItem}>Welcome</span> 
+                    <span className={styles.titleItem}>to</span>
+                    <span className={styles.titleItem}>My</span>
+                    <span className={styles.titleItem}>Final</span>
+                    <span className={styles.titleItem}>Project</span>
+                    <span className={styles.titleItem}>for</span>
+                    <span className={styles.titleItem}>TTS!</span>
+                </h1>
                 
                 {/* button use to toggle between which content to display */}
                 <div className={styles.navBar}>

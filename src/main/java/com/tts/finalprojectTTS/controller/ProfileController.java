@@ -78,7 +78,7 @@ public class ProfileController {
 		Profile p = profile.get();
 		
 		// extracting information
-		UserInfo info = new UserInfo(p.getFirstName(), p.getLastName(), p.getBirthday());
+		UserInfo info = new UserInfo(p.getFirstName(), p.getLastName(), p.getBirthday(), p.getGender());
 		
 		return new ResponseEntity<>(info, HttpStatus.OK);
 	}
@@ -147,6 +147,7 @@ public class ProfileController {
 		dbProfile.setFirstName(updateInfo.getFirstName());
 		dbProfile.setLastName(updateInfo.getLastName());
 		dbProfile.setBirthday(updateInfo.getBirthday());
+		dbProfile.setGender(updateInfo.getGender());
 		
 		profileRepository.save(dbProfile);
 		

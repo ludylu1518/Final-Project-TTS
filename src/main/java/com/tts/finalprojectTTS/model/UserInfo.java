@@ -5,15 +5,26 @@ public class UserInfo {
 	private String firstName;
 	private String lastName;
 	private String birthday;
+	private String gender;
 	
 	public UserInfo() {
 		
 	}
 	
-	public UserInfo(String firstName, String lastName, String birthday) {
+	public UserInfo(String firstName, String lastName, String birthday, String gender) {
 		this.firstName = firstName;
 		this.lastName = lastName;
 		this.birthday = birthday;
+		this.gender = gender;
+	}
+	
+
+	public String getGender() {
+		return gender;
+	}
+
+	public void setGender(String gender) {
+		this.gender = gender;
 	}
 
 	public String getFirstName() {
@@ -42,7 +53,8 @@ public class UserInfo {
 
 	@Override
 	public String toString() {
-		return "UserInfo [firstName=" + firstName + ", lastName=" + lastName + ", birthday=" + birthday + "]";
+		return "UserInfo [firstName=" + firstName + ", lastName=" + lastName + ", birthday=" + birthday + ", gender="
+				+ gender + "]";
 	}
 		
 }

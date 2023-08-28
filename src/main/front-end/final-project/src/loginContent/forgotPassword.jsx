@@ -80,7 +80,7 @@ function forgotPassword() {
         <>
             <div className={styles2.page}>
                 <h2>To retrieve your password, please enter your username below.</h2>
-                {check === 0 ? <div className={styles.good}>{status}</div> : <div className={styles.error}>{status}</div>}
+                {check === 0 ? <div className={styles.good}>{status}</div> : <div className={styles.error2}>{status}</div>}
 
                 <div className={styles2.content}>
                     <form className={styles.formContent} onSubmit={handleSubmit}>

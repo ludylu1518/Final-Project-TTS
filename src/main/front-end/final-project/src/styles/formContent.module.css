@@ -18,7 +18,7 @@ h1 {
     padding-top: 20px;
 }
 
-.formContent input {
+.formContent input, .formContent select {
     padding: 5px;
     width: 300px;
 }
@@ -40,10 +40,16 @@ h1 {
 
 .error {
     color: red;
+    text-align: center;
     font-size: 25px;
     word-wrap: break-word;
     width: 350px;
+}
+
+.error2 {
+    color: red;
     text-align: center;
+    font-size: 25px;
 }
 
 .good {

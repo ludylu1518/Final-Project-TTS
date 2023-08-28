@@ -5,8 +5,40 @@
 }
 
 .header1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     margin-bottom: 70px;
     font-size: 60px;
+    gap: 15px;
+}
+
+.titleItem{
+    position: relative;
+    
+    animation: bounce .5s ease infinite alternate;                
+}
+
+.titleItem:nth-child(2) {
+    animation-delay: .1s;
+}
+.titleItem:nth-child(3) {
+    animation-delay: .2s;
+}
+.titleItem:nth-child(4) {
+    animation-delay: .3s;
+}
+.titleItem:nth-child(5) {
+    animation-delay: .4s;
+}
+.titleItem:nth-child(6) {
+    animation-delay: .5s;
+}
+
+@keyframes bounce {
+    100% {
+        transform: translateY(-20px);
+    }
 }
 
 .navBar {
@@ -43,11 +75,18 @@
 .loginButton {
     text-decoration: none;
     font-size: 50px;
-    color: rgb(127, 126, 126);
-    border-bottom: 1px rgb(127, 126, 126) solid;
+    padding: 8px 12px;
+    color: rgb(82, 81, 81);
+    border-bottom: 1px rgb(82, 81, 81) solid;
+
+    /* color sliding when hover */
+    background: linear-gradient(to left, aquamarine 50%, lightblue 50%) right;
+    background-size: 200%;
+    transition: 0.4s ease-in;
 }
 
 .loginButton:hover {
     color:black;
     border-bottom: 1px black solid;
+    background-position: left;
 }

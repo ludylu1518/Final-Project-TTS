@@ -6,12 +6,13 @@ function editProfile() {
 
     // functionality passed from userPage
     const {setInfo, name} = useOutletContext();
-    
+
     // keep track of form 
     const [template, setTemplate] = useState({
         firstName: "",
         lastName: "",
         birthday: "",
+        gender: "",
     })
 
     // check if changes successfully saved 
@@ -93,6 +94,13 @@ function editProfile() {
                 <label htmlFor="birthday">Birthday: </label>
                 <input id="birthday" name="birthday" type="date" onChange={handleChange} value={template.birthday}></input>
                 {error.birthday && <div className={styles.error}>{error.birthday}</div>}
+
+                <label htmlFor="gender">Gender: </label>
+                <select id="gender" name="gender" onChange={handleChange}> 
+                    <option value="">Other</option>
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                </select>
 
                 <button className={styles.btn} type="submit">Save Changes</button>
 

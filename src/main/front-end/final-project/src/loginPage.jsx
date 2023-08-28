@@ -15,17 +15,15 @@ function loginPage() {
     const [current, setCurrent] = new useState(<Login />);
     
     // when active tab changes, the content will update with the corresponding tab
-    useEffect(() => {
-       if (active) {
-            switch (active) {
-                case 'Login':
-                    return setCurrent(<Login />);
-                case 'Signup':
-                    return setCurrent(<SignUp />);
-                default:
-                    return null;
-            }
-       }
+    useEffect(() => {       
+        switch (active) {
+            case 'Login':
+                return setCurrent(<Login />);
+            case 'Signup':
+                return setCurrent(<SignUp />);
+            default:
+                return null;
+        }      
     }, [active])
 
     return (

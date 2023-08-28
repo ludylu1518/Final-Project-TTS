@@ -2,6 +2,7 @@ package com.tts.finalprojectTTS.model;
 
 import org.hibernate.validator.constraints.Length;
 
+import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
@@ -22,18 +23,40 @@ public class Profile {
 	private String firstName = "firstName";
 	private String lastName= "lastName";
 	private String birthday = "00-00-0000";
+	private String gender = "";
+	
+	@Column(length = 640)
+	private String photo;
 	
 	public Profile() {
 
 	}
 	
-	public Profile(Long id, String username, String password, String firstName, String lastName, String birthday) {
+	public Profile(Long id, String username, String password, String firstName, String lastName, String birthday, String photo, String gender) {
 		this.id = id;
 		this.username = username;
 		this.password = password;
 		this.firstName = firstName;
 		this.lastName = lastName;
 		this.birthday = birthday;
+		this.photo = photo;
+		this.gender = gender;
+	}
+
+	public String getPhoto() {
+		return photo;
+	}
+
+	public void setPhoto(String photo) {
+		this.photo = photo;
+	}
+	
+	public String getGender() {
+		return gender;
+	}
+
+	public void setGender(String gender) {
+		this.gender = gender;
 	}
 
 	public Long getId() {
@@ -87,8 +110,7 @@ public class Profile {
 	@Override
 	public String toString() {
 		return "Profile [id=" + id + ", username=" + username + ", password=" + password + ", firstName=" + firstName
-				+ ", lastName=" + lastName + ", birthday=" + birthday + "]";
-	}
-	
+				+ ", lastName=" + lastName + ", birthday=" + birthday + ", gender=" + gender + ", photo=" + photo + "]";
+	}	
 	
 }
